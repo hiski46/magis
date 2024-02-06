@@ -39,7 +39,7 @@
       <div class="card card-md m-5 animate__animated animate__pulse">
         <div class="card-body">
           <h2 class="h2 text-center mb-4">Login to your account</h2>
-          <form action="./" method="get" autocomplete="off" novalidate>
+          <form action="" method="get" autocomplete="off" novalidate>
             <div class="mb-3">
               <label class="form-label">User ID</label>
               <input type="email" class="form-control" placeholder="your@email.com" autocomplete="off">
@@ -67,7 +67,7 @@
               </label>
             </div>
             <div class="form-footer">
-              <button type="submit" class="btn btn-primary w-100">Sign in</button>
+              <a href="content.php?v=home" type="submit" class="btn btn-primary w-100">Sign in</a>
             </div>
           </form>
         </div>
