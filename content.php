@@ -11,7 +11,20 @@
     <link href="./dist/css/tabler-vendors.min.css?1684106062" rel="stylesheet"/>
     <link href="./dist/css/demo.min.css?1684106062" rel="stylesheet"/>
     <link rel="icon" href="./static/logo/favicon.png" type="image/x-icon">
+    <!-- Annimation CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Tambahkan link CSS untuk Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <!-- Tambahkan link CSS untuk DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <script src="./dist/js/demo.min.js?1684106062" defer></script>
+    <!-- Tambahkan link untuk jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- Tambahkan link untuk DataTables -->
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <!-- Tambahkan link untuk DataTables Bootstrap 5 integration -->
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+
     <style>
       @import url('https://rsms.me/inter/inter.css');
       :root {
@@ -20,10 +33,14 @@
      body {
        font-feature-settings: "cv03", "cv04", "cv11";
      }
-   </style>
- </head>
+     div.dataTables_wrapper div.dataTables_length select {
+      width: 50px;
+      display: inline-block;
+    }
+  </style>
+</head>
 
- <body>
+<body>
   <div class="page">
 
     <!-- Navbar -->
@@ -193,6 +210,7 @@
         $pages = [
           "home"          => "home.php",
           "manage_apps"   => "manage_apps.php",
+          "manage_user"   => "manage_user.php",
           "documentation" => "documentation.php"
         ];
 
@@ -231,6 +249,6 @@
   <!-- Tabler Core -->
   <script src="./dist/js/demo-theme.min.js?1684106062"></script>
   <script src="./dist/js/tabler.min.js?1684106062" defer></script>
-  <script src="./dist/js/demo.min.js?1684106062" defer></script>
+
 </body>
 </html>
