@@ -23,81 +23,32 @@
         </div>
       </div>
 
-      <div id="table-default" class="table-responsive mx-4 mb-5">
-        <table class="table">
-          <thead>
-            <tr>
-              <th><button class="table-sort">Status</button></th>
-              <th><button class="table-sort">Name</button></th>
-              <th><button class="table-sort">Description</button></th>
-              <th><button class="table-sort">Link Development</button></th>
-              <th><button class="table-sort">Link Production</button></th>
-              <th><button class="table-sort">Action</button></th>
-            </tr>
-          </thead>
-          <tbody class="table-tbody">
-            <tr>
-              <td>
-                <label class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" checked="">
-                  <span class="form-check-label">Active</span>
-                </label>
-              </td>
-              <td class="sort-city">Payday</td>
-              <td class="sort-type">Payday adalah aplikasi...</td>
-              <td class="sort-score text-muted">
-                <small><b>Link</b> : https://payday.mandiricoal.net/<br><b>Token</b> : JIYnuYUY98nJOiuy... <span class="badge bg-azure-lt">Copy</span></small>
-              </td>
-              <td class="sort-score text-muted">
-                <small><b>Link</b> : https://office.mandiricoal.co.id/<br><b>Token</b> : JIYnuYUY98nJOiuy... <span class="badge bg-azure-lt">Copy</span></small>
-              </td>
-              <td>
-                <div class="d-flex">
-                  <div class="col-xl py-3 p-1">
-                    <a href="#" class="btn btn-sm btn-outline-info w-100" data-bs-toggle="modal" data-bs-target="#modal-view">
-                      View
-                    </a>
-                  </div>
-                  <div class="col-xl py-3 p-1">
-                    <a href="#" class="btn btn-sm btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#modal-edit">
-                      Edit
-                    </a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox">
-                  <span class="form-check-label">Inactive</span>
-                </label>
-              </td>
-              <td class="sort-city">Sisakty</td>
-              <td class="sort-type">Sisakty adalah aplikasi...</td>
-              <td class="sort-score text-muted">
-                <small><b>Link</b> : https://sisakty.mandiricoal.net/<br><b>Token</b> : JIYnuYUY98nJOiuy... <span class="badge bg-azure-lt">Copy</span></small>
-              </td>
-              <td class="sort-score text-muted">
-                <small><b>Link</b> : https://sisakty.mandiricoal.co.id/<br><b>Token</b> : JIYnuYUY98nJOiuy... <span class="badge bg-azure-lt">Copy</span></small>
-              </td>
-              <td>
-                <div class="d-flex">
-                  <div class="col-xl py-3 p-1">
-                    <a href="#" class="btn btn-sm btn-outline-info w-100" data-bs-toggle="modal" data-bs-target="#modal-view">
-                      View
-                    </a>
-                  </div>
-                  <div class="col-xl py-3 p-1">
-                    <a href="#" class="btn btn-sm btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#modal-edit">
-                      Edit
-                    </a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="card-body">
+        <div class="table-responsive">
+          <table id="example" class="table table-sm table-striped" style="width:100%">
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Development</th>
+                <th>Production</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Status</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Development</th>
+                <th>Production</th>
+                <th>Action</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -273,3 +224,52 @@
     </div>
   </div>
 </div>
+
+
+<!-- Custom Datatables -->
+<script>
+  $(document).ready(function() {
+    $(document).ready(function() {
+      new DataTable('#example', {
+        ajax: 'dataset/application.txt',
+        paging: true, // Enable paging
+        searching: true, // Enable searching
+        info: true, // Show information about data
+        scrollX: true, // Enable horizontal scrolling if needed
+        // scrollY: '950px', // Enable vertical scrolling with height 300px
+        responsive: true, // Enable responsive
+        lengthMenu: [25, 50, 100], // Disable length menu
+        pageLength: 25, // Default page length
+        autoWidth: true, // Enable automatic width calculation
+        ordering: true, // Enable sorting
+        order: [[0, 'asc']], // Default sorting column and order
+        dom: "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" + 
+        "<'row'<'col-sm-12'tr>>" + 
+             "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>", // Custom layout
+             language: {
+            // Set language to English
+            "emptyTable": "No data available in table",
+            "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+            "infoEmpty": "Showing 0 to 0 of 0 entries",
+            "infoFiltered": "(filtered from _MAX_ total entries)",
+            "infoPostFix": "",
+            "thousands": ",",
+            "loadingRecords": "Loading...",
+            "processing": "Processing...",
+            "search": "Search:",
+            "zeroRecords": "No matching records found",
+            "paginate": {
+              "first": "First",
+              "last": "Last",
+              "next": "Next",
+              "previous": "Previous"
+            },
+            "aria": {
+              "sortAscending": ": activate to sort column ascending",
+              "sortDescending": ": activate to sort column descending"
+            }
+          }
+        });
+    });
+  });
+</script>

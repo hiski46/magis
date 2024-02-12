@@ -4,17 +4,21 @@
       <div class="row g-2 p-4 align-items-center">
         <div class="col">
           <div class="page-pretitle">
-            Application
+            User
           </div>
           <h2 class="page-title">
-            Manage Apps
+            Manage User
           </h2>
         </div>
         <div class="col-auto ms-auto d-print-none">
           <div class="btn-list">
             <a href="#" data-bs-toggle="modal" data-bs-target="#modal-add" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 5l0 14"></path><path d="M5 12l14 0"></path></svg>
-              Add Application
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+              </svg>
+              Synchronize
             </a>
             <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 5l0 14"></path><path d="M5 12l14 0"></path></svg>
@@ -25,25 +29,27 @@
 
       <div class="card-body">
         <div class="table-responsive">
-          <table id="example" class="display" style="width:100%">
+          <table id="example" class="table table-sm table-striped" style="width:100%">
             <thead>
               <tr>
-                <th>First name</th>
-                <th>Last name</th>
+                <th>Status</th>
+                <th>NIK</th>
+                <th>Name</th>
                 <th>Position</th>
-                <th>Office</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Divisi</th>
+                <th>Company</th>
+                <th style="width: 15%;">Action</th>
               </tr>
             </thead>
             <tfoot>
               <tr>
-                <th>First name</th>
-                <th>Last name</th>
+                <th>Status</th>
+                <th>NIK</th>
+                <th>Name</th>
                 <th>Position</th>
-                <th>Office</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Divisi</th>
+                <th>Company</th>
+                <th style="width: 15%;">Action</th>
               </tr>
             </tfoot>
           </table>
@@ -60,15 +66,15 @@
       new DataTable('#example', {
         ajax: 'dataset/user.txt',
         paging: true, // Enable paging
-        ordering: true, // Enable sorting
         searching: true, // Enable searching
         info: true, // Show information about data
         scrollX: true, // Enable horizontal scrolling if needed
-        scrollY: '950px', // Enable vertical scrolling with height 300px
+        // scrollY: '950px', // Enable vertical scrolling with height 300px
         responsive: true, // Enable responsive
         lengthMenu: [25, 50, 100], // Disable length menu
         pageLength: 25, // Default page length
         autoWidth: true, // Enable automatic width calculation
+        ordering: true, // Enable sorting
         order: [[0, 'asc']], // Default sorting column and order
         dom: "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" + 
         "<'row'<'col-sm-12'tr>>" + 
