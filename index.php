@@ -1,38 +1,45 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>MAGIS - Mandiri Group Integrated System</title>
-  <!-- CSS files -->
-  <link href="./dist/css/tabler.min.css?1684106062" rel="stylesheet"/>
-  <link href="./dist/css/tabler-flags.min.css?1684106062" rel="stylesheet"/>
-  <link href="./dist/css/tabler-payments.min.css?1684106062" rel="stylesheet"/>
-  <link href="./dist/css/tabler-vendors.min.css?1684106062" rel="stylesheet"/>
-  <link href="./dist/css/demo.min.css?1684106062" rel="stylesheet"/>
-  <link rel="icon" href="./static/logo/favicon.png" type="image/x-icon">
-  <style>
-    @import url('https://rsms.me/inter/inter.css');
-    :root {
-     --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-   }
-   body {
-     font-feature-settings: "cv03", "cv04", "cv11";
-   }
- </style>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>MAGIS - Mandiri Group Integrated System</title>
+    <!-- CSS files -->
+    <link href="./dist/css/tabler.min.css?1684106062" rel="stylesheet"/>
+    <link href="./dist/css/tabler-flags.min.css?1684106062" rel="stylesheet"/>
+    <link href="./dist/css/tabler-payments.min.css?1684106062" rel="stylesheet"/>
+    <link href="./dist/css/tabler-vendors.min.css?1684106062" rel="stylesheet"/>
+    <link href="./dist/css/demo.min.css?1684106062" rel="stylesheet"/>
+    <link rel="icon" href="./static/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+       --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+     }
+     body {
+       font-feature-settings: "cv03", "cv04", "cv11";
+       background-image: url('./static/photos/background.jpg');
+       background-size: cover; 
+       background-repeat: no-repeat;
+     }
+     .card{
+      --tblr-card-bg: #ffffffa3;
+      --tblr-card-border-radius: 15px;
+    }
+  </style>
 </head>
 <body class=" d-flex flex-column">
-  <script src="./static/logo/magis_icon.png"></script>
   <div class="page page-center">
     <div class="container container-tight py-4">
-      <div class="text-center mb-4">
-        <a href="." class="navbar-brand navbar-brand-autodark"><img src="./static/logo/magis_icon.png" height="80" alt=""></a>
+      <div class="text-center mb-4 animate__animated animate__rubberBand">
+        <a href="." class="navbar-brand navbar-brand-autodark"><img src="./static/logo/magis_white.png" height="100" alt=""></a>
       </div>
-      <div class="card card-md">
+      <div class="card card-md m-5 animate__animated animate__pulse">
         <div class="card-body">
           <h2 class="h2 text-center mb-4">Login to your account</h2>
-          <form action="./" method="get" autocomplete="off" novalidate>
+          <form action="" method="get" autocomplete="off" novalidate>
             <div class="mb-3">
               <label class="form-label">User ID</label>
               <input type="email" class="form-control" placeholder="your@email.com" autocomplete="off">
@@ -41,7 +48,7 @@
               <label class="form-label">
                 Password
                 <span class="form-label-description">
-                  <a href="./forgot-password.html">Forgot Password ?</a>
+                  <a class="text-black" href="./forgot-password.html">Forgot Password ?</a>
                 </span>
               </label>
               <div class="input-group input-group-flat">
@@ -60,13 +67,13 @@
               </label>
             </div>
             <div class="form-footer">
-              <button type="submit" class="btn btn-primary w-100">Sign in</button>
+              <a href="content.php?v=home" type="submit" class="btn btn-primary w-100">Sign in</a>
             </div>
           </form>
         </div>
       </div>
-      <div class="text-center text-muted mt-3">
-        Already have an accoount ? <a href="./sign-up.html" tabindex="-1">Sign up</a>
+      <div class="text-center mt-3" style="color: #ffffff91;">
+        Already have an accoount ? <a class="text-white" href="./sign-up.html" tabindex="-1"><b><i>Sign up</i></b></a>
       </div>
     </div>
   </div>
