@@ -20,7 +20,7 @@
      }
      body {
        font-feature-settings: "cv03", "cv04", "cv11";
-       background-image: url('./static/photos/background.jpg');
+       background-image: url('./static/photos/background.png');
        background-size: cover; 
        background-repeat: no-repeat;
      }

@@ -1,29 +1,31 @@
 {
-  "data": [
-  [
-  "<span class='badge badge-outline text-azure w-50'>Active</span>",
-  "3839",
-  "Andika Debi Putra",
-  "Supervisor",
-  "ITE",
-  "MIP",
-  "<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-info w-75' data-bs-toggle='modal' data-bs-target='#modal-view'>View</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-success w-75' data-bs-toggle='modal' data-bs-target='#modal-Roles'>Roles</a></div></div>"
-  ],
-  [
-  "<span class='badge badge-outline text-azure w-50'>Active</span>","3839",
-  "Andika Debi Putra",
-  "Supervisor",
-  "ITE",
-  "MIP",
-  "<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-info w-75' data-bs-toggle='modal' data-bs-target='#modal-view'>View</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-success w-75' data-bs-toggle='modal' data-bs-target='#modal-Roles'>Roles</a></div></div>"
-  ],
-  [
-  "<span class='badge badge-outline text-secondary w-50'>Incative</span>","3839",
-  "Andika Debi Putra",
-  "Supervisor",
-  "ITE",
-  "MIP",
-  "<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-info w-75' data-bs-toggle='modal' data-bs-target='#modal-view'>View</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-success w-75' data-bs-toggle='modal' data-bs-target='#modal-Roles'>Roles</a></div></div>"
-  ]
-  ]
+"data": [
+[
+"<span class='badge bg-blue-lt w-50'>Active</span>",
+"3839",
+"Andika Debi Putra",
+"Supervisor",
+"ITE",
+"MIP",
+"<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-outline-info w-75' data-bs-toggle='modal' data-bs-target='#modal-view'>View</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-outline-success w-75' data-bs-toggle='modal' data-bs-target='#modal-Roles'>Roles</a></div></div>"
+],
+[
+"<span class='badge bg-blue-lt w-50'>Active</span>",
+"3839",
+"Andika Debi Putra",
+"Supervisor",
+"ITE",
+"MIP",
+"<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-outline-info w-75' data-bs-toggle='modal' data-bs-target='#modal-view'>View</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-outline-success w-75' data-bs-toggle='modal' data-bs-target='#modal-Roles'>Roles</a></div></div>"
+],
+[
+"<span class='badge bg-red-lt w-50'>Inactive</span>",
+"3839",
+"Andika Debi Putra",
+"Supervisor",
+"ITE",
+"MIP",
+"<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-outline-info w-75' data-bs-toggle='modal' data-bs-target='#modal-view'>View</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-outline-success w-75' data-bs-toggle='modal' data-bs-target='#modal-Roles'>Roles</a></div></div>"
+]
+]
 }
