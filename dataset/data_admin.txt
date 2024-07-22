@@ -1,0 +1,28 @@
+{
+"data": [
+[
+"<label class='form-check form-switch'><input class='form-check-input' type='checkbox' checked='' href='#' class='btn' data-bs-toggle='modal' data-bs-target='#modal_confirm_status'><span class='form-check-label'>Aktif</span></label>",
+"Payday",
+"Payday adalah aplikasi...",
+"<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-info w-100' data-bs-toggle='modal' data-bs-target='#modal_view_admin'>Lihat</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-success w-100' data-bs-toggle='modal' data-bs-target='#modal_edit_admin'>Ubah</a></div></div>"
+],
+[
+"<label class='form-check form-switch'><input class='form-check-input' type='checkbox' checked='' href='#' class='btn' data-bs-toggle='modal' data-bs-target='#modal_confirm_status'><span class='form-check-label'>Aktif</span></label>",
+"Payday",
+"Payday adalah aplikasi...",
+"<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-info w-100' data-bs-toggle='modal' data-bs-target='#modal_view_admin'>Lihat</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-success w-100' data-bs-toggle='modal' data-bs-target='#modal_edit_admin'>Ubah</a></div></div>"
+],
+[
+"<label class='form-check form-switch'><input class='form-check-input' type='checkbox' checked='' href='#' class='btn' data-bs-toggle='modal' data-bs-target='#modal_confirm_status'><span class='form-check-label'>Aktif</span></label>",
+"Payday",
+"Payday adalah aplikasi...",
+"<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-info w-100' data-bs-toggle='modal' data-bs-target='#modal_view_admin'>Lihat</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-success w-100' data-bs-toggle='modal' data-bs-target='#modal_edit_admin'>Ubah</a></div></div>"
+],
+[
+"<label class='form-check form-switch'><input class='form-check-input' type='checkbox' checked='' href='#' class='btn' data-bs-toggle='modal' data-bs-target='#modal_confirm_status'><span class='form-check-label'>Aktif</span></label>",
+"Payday",
+"Payday adalah aplikasi...",
+"<div class='d-flex'><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-info w-100' data-bs-toggle='modal' data-bs-target='#modal_view_admin'>Lihat</a></div><div class='col-xl py-3 p-1'><a href='#' class='btn btn-sm btn-success w-100' data-bs-toggle='modal' data-bs-target='#modal_edit_admin'>Ubah</a></div></div>"
+]
+]
+}

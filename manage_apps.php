@@ -1,50 +1,47 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <div class="row">
   <div class="col-lg-12 animate__animated animate__pulse">
     <div class="card">
       <div class="row g-2 p-4 align-items-center">
         <div class="col">
           <div class="page-pretitle">
-            Application
+            Master Data
           </div>
           <h2 class="page-title">
-            Manage Apps
+            Data Admin
           </h2>
         </div>
         <div class="col-auto ms-auto d-print-none">
           <div class="btn-list">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-add" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal_add_admin" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal_add_admin">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 5l0 14"></path><path d="M5 12l14 0"></path></svg>
-              Add Application
+              Tambah
             </a>
-            <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
+            <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal_add_admin" aria-label="Create new report">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 5l0 14"></path><path d="M5 12l14 0"></path></svg>
             </a>
           </div>
         </div>
       </div>
 
-
-      <div class="card-body">
+      <!-- Card Body -->
+      <div class="card-body animate__pulse">
         <div class="table-responsive">
-          <table id="example" class="table table-sm" style="width:100%">
+          <table id="table_admin" class="table table-sm" style="width:100%">
             <thead>
               <tr>
                 <th>Status</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Development</th>
-                <th>Production</th>
-                <th>Action</th>
+                <th>Nama</th>
+                <th>Deskripsi</th>
+                <th>Aksi</th>
               </tr>
             </thead>
             <tfoot>
               <tr>
                 <th>Status</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Development</th>
-                <th>Production</th>
-                <th>Action</th>
+                <th>Nama</th>
+                <th>Deskripsi</th>
+                <th>Aksi</th>
               </tr>
             </tfoot>
           </table>
@@ -54,129 +51,76 @@
   </div>
 </div>
 
-<div class="modal modal-blur fade" id="modal-add" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Modal Add Admin -->
+<div class="modal modal-blur fade" id="modal_add_admin" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">New report</h5>
+        <h5 class="modal-title">Ubah Data Admin</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="mb-3">
-          <div class="form-label">Icon<span class="text-red">*</span></div>
-          <input type="file" class="form-control">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Name<span class="text-red">*</span></label>
-          <input type="text" class="form-control" name="example-text-input" placeholder="Your report name">
+          <label class="form-label">Nama<span class="text-red">*</span></label>
+          <input type="text" class="form-control" name="example-text-input" placeholder="Nama">
         </div>
         <div class="mb-3">
           <div>
-            <label class="form-label">Description<span class="text-red">*</span></label>
-            <textarea class="form-control" rows="3" placeholder="Description"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="mb-3">
-              <label class="form-label">Link Development<span class="text-red">*</span></label>
-              <div class="input-group input-group-flat">
-                <span class="input-group-text">
-                  https://tabler.io/reports/
-                </span>
-                <input type="text" class="form-control ps-0"  value="report-01" autocomplete="off">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="mb-3">
-              <label class="form-label">Link Production<span class="text-red">*</span></label>
-              <div class="input-group input-group-flat">
-                <span class="input-group-text">
-                  https://tabler.io/reports/
-                </span>
-                <input type="text" class="form-control ps-0"  value="report-01" autocomplete="off">
-              </div>
-            </div>
+            <label class="form-label">Deskripsi<span class="text-red">*</span></label>
+            <textarea class="form-control" placeholder="Deskripsi" rows="5"></textarea>
           </div>
         </div>
       </div>
       <div class="modal-footer">
         <a href="#" class="btn btn-link link-secondary" data-bs-dismiss="modal">
-          Cancel
+          Batal
         </a>
         <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal">
-          Save
+          Simpan
         </a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal modal-blur fade" id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Modal Edit Admin -->
+<div class="modal modal-blur fade" id="modal_edit_admin" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">New report</h5>
+        <h5 class="modal-title">Ubah Data Admin</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="mb-3">
-          <div class="form-label">Icon<span class="text-red">*</span></div>
-          <input type="file" class="form-control">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Name<span class="text-red">*</span></label>
-          <input type="text" class="form-control" name="example-text-input" placeholder="Your report name">
+          <label class="form-label">Nama<span class="text-red">*</span></label>
+          <input type="text" class="form-control" name="example-text-input" placeholder="Nama">
         </div>
         <div class="mb-3">
           <div>
-            <label class="form-label">Description<span class="text-red">*</span></label>
-            <textarea class="form-control" rows="3" placeholder="Description"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="mb-3">
-              <label class="form-label">Link Development<span class="text-red">*</span></label>
-              <div class="input-group input-group-flat">
-                <span class="input-group-text">
-                  https://tabler.io/reports/
-                </span>
-                <input type="text" class="form-control ps-0"  value="report-01" autocomplete="off">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="mb-3">
-              <label class="form-label">Link Production<span class="text-red">*</span></label>
-              <div class="input-group input-group-flat">
-                <span class="input-group-text">
-                  https://tabler.io/reports/
-                </span>
-                <input type="text" class="form-control ps-0"  value="report-01" autocomplete="off">
-              </div>
-            </div>
+            <label class="form-label">Deskripsi<span class="text-red">*</span></label>
+            <textarea class="form-control" placeholder="Deskripsi" rows="5"></textarea>
           </div>
         </div>
       </div>
       <div class="modal-footer">
         <a href="#" class="btn btn-link link-secondary" data-bs-dismiss="modal">
-          Cancel
+          Batal
         </a>
         <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal">
-          Save
+          Simpan
         </a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal modal-blur fade" id="modal-view" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Modal View Admin -->
+<div class="modal modal-blur fade" id="modal_view_admin" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Large modal</h5>
+        <h5 class="modal-title">Detil Admin</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -188,27 +132,15 @@
             <table class="table table-vcenter card-table">
               <tbody>
                 <tr>
-                  <td>Name</td>
+                  <td>Nama</td>
                   <td class="text-muted">
                     Payday
                   </td>
                 </tr>
                 <tr>
-                  <td>Description</td>
+                  <td>Deskripsi</td>
                   <td class="text-muted">
                     Payday adalah aplikasi lorem ipsum dolor amet
-                  </td>
-                </tr>
-                <tr>
-                  <td>Link Development</td>
-                  <td class="text-muted">
-                    https://payday.mandiricoal.net
-                  </td>
-                </tr>
-                <tr>
-                  <td>Link Production</td>
-                  <td class="text-muted">
-                    https://payday.mandiricoal.co.id
                   </td>
                 </tr>
               </tbody>
@@ -218,58 +150,104 @@
       </div>
       <div class="modal-footer">
         <a href="#" class="btn btn-link link-secondary" data-bs-dismiss="modal">
-          Cancel
+          Keluar
         </a>
       </div>
     </div>
   </div>
 </div>
 
+<!-- Modal Confirm Status -->
+<div class="modal modal-blur fade" id="modal_confirm_status" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-status"></div>
+      <div class="modal-body text-center py-4">
+        <!-- Download SVG icon from http://tabler-icons.io/i/alert-triangle -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-warning icon-lg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+        <h3>Ubah Status ?</h3>
+        <div class="text-muted">Apakah anda yakin akan mengubah status ini ?</div>
+      </div>
+      <div class="modal-footer">
+        <div class="w-100">
+          <div class="row">
+            <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal" onclick="errorAlert()">
+              Batal
+            </a></div>
+            <div class="col"><a href="#" class="btn btn-primary w-100" data-bs-dismiss="modal" onclick="successAlert()">
+              Simpan
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Success Alert
+  function successAlert() {
+    Swal.fire({
+      icon: "success",
+      title: "Berhasil!",
+      showConfirmButton: false,
+      timer: 2000
+    });
+  }
+  // Error Alert
+  function errorAlert() {
+    Swal.fire({
+      icon: "error",
+      title: "Gagal!",
+      showConfirmButton: false,
+      timer: 2000
+    });
+  }
+</script>
 
 <!-- Custom Datatables -->
 <script>
   $(document).ready(function() {
-    $(document).ready(function() {
-      new DataTable('#example', {
-        ajax: 'dataset/application.txt',
-        paging: true, // Enable paging
-        searching: true, // Enable searching
-        info: true, // Show information about data
-        scrollX: true, // Enable horizontal scrolling if needed
-        // scrollY: '950px', // Enable vertical scrolling with height 300px
-        responsive: true, // Enable responsive
-        lengthMenu: [25, 50, 100], // Disable length menu
-        pageLength: 25, // Default page length
-        autoWidth: true, // Enable automatic width calculation
-        ordering: true, // Enable sorting
-        order: [[0, 'asc']], // Default sorting column and order
-        dom: "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" + 
-        "<'row'<'col-sm-12'tr>>" + 
-             "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>", // Custom layout
-             language: {
-            // Set language to English
-            "emptyTable": "No data available in table",
-            "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-            "infoEmpty": "Showing 0 to 0 of 0 entries",
-            "infoFiltered": "(filtered from _MAX_ total entries)",
+    new DataTable('#table_admin', {
+      ajax: 'dataset/data_admin.txt',
+      paging: true, // Aktifkan paging
+      searching: true, // Aktifkan pencarian
+      info: true, // Tampilkan informasi tentang data
+      scrollX: true, // Aktifkan pengguliran horizontal jika diperlukan
+      // scrollY: '950px', // Aktifkan pengguliran vertikal dengan tinggi 300px
+      responsive: true, // Aktifkan responsif
+      lengthMenu: [25, 50, 100], // Matikan menu panjang
+      pageLength: 25, // Panjang halaman default
+      autoWidth: true, // Aktifkan perhitungan lebar otomatis
+      ordering: true, // Aktifkan penyortiran
+      order: [[0, 'asc']], // Kolom pengurutan dan urutan default
+      dom: "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" + 
+      "<'row'<'col-sm-12'tr>>" + 
+           "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>", // Tata letak kustom
+           language: {
+            "emptyTable": "Tidak ada data",
+            "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
+            "infoEmpty": "Menampilkan 0 sampai 0 dari 0 data",
+            "infoFiltered": "(Filter dari total _MAX_ data)",
             "infoPostFix": "",
             "thousands": ",",
-            "loadingRecords": "Loading...",
-            "processing": "Processing...",
-            "search": "Search:",
-            "zeroRecords": "No matching records found",
+            "loadingRecords": "Memuat...",
+            "processing": "Memproses...",
+            "search": "Cari:",
+            "zeroRecords": "Tidak ada data yang cocok",
+            "lengthMenu": "Menampilkan _MENU_ data",
             "paginate": {
-              "first": "First",
-              "last": "Last",
-              "next": "Next",
-              "previous": "Previous"
+              "first": "Awal",
+              "last": "Akhir",
+              "next": "Selanjutnya",
+              "previous": "Sebelumnya"
             },
             "aria": {
-              "sortAscending": ": activate to sort column ascending",
-              "sortDescending": ": activate to sort column descending"
+              "sortAscending": ": Aktifkan untuk mengurutkan kolom secara ascending",
+              "sortDescending": ": aktifkan untuk mengurutkan kolom secara descending"
             }
           }
         });
-    });
   });
 </script>
